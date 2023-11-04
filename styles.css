@@ -1,0 +1,332 @@
+*{
+    box-sizing: border-box;  
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0px;
+}
+
+.navbar{
+    width:100%;
+    top:0;
+    background-color: rgba(0, 0, 0, 0.014);
+    backdrop-filter: blur(5px); /*have a blur effect on background color*/
+    display: flex;
+    justify-content: space-between;
+    top:0;
+    position: fixed;
+    z-index: 2;
+}
+
+.navbar img{
+    height: 7%;
+    width: 7%;
+    margin-left: 15px;
+}
+
+.navbar ul {
+    display: flex;
+    margin: 0;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+.navbar a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-right:35px;
+}
+  
+.navbutton{
+    height:100%;
+    width: 130px;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    font-family: 'Montserrat',sans-serif;
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+
+/*START OF CONTAINER1////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+.container1{
+    height:100vh;
+    width:100%;
+    background-color: #151824;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.introduction{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column; /* Stack the headings vertically */
+}
+
+.intro{
+    margin: 0 0 0 20%;
+    color: white;
+    font-size: 2rem;
+    font-family: 'Montserrat',sans-serif;
+    width: 495px;
+    line-height: 70px;
+    font-weight:400;
+}
+
+.intro:nth-child(1){
+    margin-top:25%; 
+    box-shadow: 0px 0px 5px rgba(0,0,0,.1);
+    padding:20px 30px;
+    border-radius: 30px;
+    background-color: #1d2131;
+}
+
+.intro:nth-child(2){
+    margin-top: 40px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,.1);
+    border-radius: 30px;
+    background-color: #1d2131;
+    width: 339px;
+    padding:10px 30px;
+}
+
+.container1 img{
+    display: flex;
+    height:70%;
+    width:35%;
+    /* align-self: end;  MAKE THE IMG BE PLACED AT THE BOTTOM AND NOT MOVE WHEN ZOOMED OUT */ /*WITH container1 with display:grid;, grid-template-columns:1fr 1fr*/
+    bottom: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+
+/*START OF CONTAINER2////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+.container2{
+    height:auto;
+    width:100%;
+    background-color: #191F36;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.project-title{
+    color: white;
+    margin-bottom: 0px;
+    font-family: 'Montserrat',sans-serif;
+    margin-top: 85px;
+    margin-bottom: 50px;
+}
+
+.project-container{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; /*Allow items to wrap to the next row */
+    justify-content: center; 
+    /* align-content: flex-start; ADDED BY CHATGPT FOR WHEN I ADD MORE PROJECTS*/ 
+    gap: 70px;
+}
+
+.project1, .project2, .project3{  /*, .project4 ,.project5*/
+    height: 400px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #444e74;
+    border-radius: 10px;
+    flex-direction: column;
+}
+
+.project-image{
+    height: 200px;
+    width: 200px;
+    margin-top: -45px;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.project-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.project-name{
+    width: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: -20px;
+    color: white;
+    background-color: #444e74;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 10px 10px;
+    font-family: 'Montserrat',sans-serif;
+}
+
+.project-description{
+    margin-top: 20px;
+    height: auto;
+    max-width: 250px;
+    width: auto;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align:justify;
+    font-family: 'Montserrat',sans-serif;
+}
+
+
+/*START OF CONTAINER3////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+.container3{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height:100vh;
+    width:100%;
+    background-color: #191F36;
+    position: relative;
+}
+
+.skill-title{
+    color: white;
+    margin-bottom: 0px;
+    font-family: 'Montserrat',sans-serif;
+    margin-top: 85px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.skill-container{
+    height: 700px;
+    width: 100%;
+    display: flex;
+}
+
+.skill-icon{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    margin-right: 35px;
+}
+
+.skill-icon-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.skill{
+    height: 140px;
+    width: 140px;
+    margin: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 100px;
+    background-color:#444e74;
+}
+
+.skill img{
+    height: 80px;
+    width: 90px;
+}
+
+.javascript{
+    height: 10px;
+    width: 10px;
+}
+
+.skill-icon-container p{
+    margin:10px 0;
+    color:white;
+    font-family: 'Montserrat',sans-serif;
+}
+
+.skill-description{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.skill-description-container{
+    height:auto;
+    width: 50%;
+}
+
+.dropdown-toggle {
+    display: none; /*REMOVES CHECKLIST FROM <input>*/
+}
+  
+.dropdown-label {
+    display: block;
+    background-color: transparent;
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+    font-family: 'Montserrat',sans-serif;
+    margin-top: 10px;
+}
+  
+.arrow {
+    float: right;
+    transition: transform 0.3s;
+    color:white;
+    font-size: 1.2rem;
+}
+  
+.dropdown-content {
+    max-height: 0;  /*IMPORTANT TO ENABLE DROPDOWN*/
+    overflow: hidden; /*IMPORTANT TO HIDE DROPDOWN CONTENT*/
+    transition: max-height 0.4s;
+    color: white;
+    font-family: 'Montserrat',sans-serif;
+    padding: 0 20px;
+}
+  
+.dropdown-toggle:checked + .dropdown-label .arrow {
+    transform: rotate(-90deg);
+}
+  
+.dropdown-toggle:checked + .dropdown-label + .dropdown-content {
+    max-height: 100px;
+}
+
+
+/*START OF CONTAINER3////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+.container4{
+    height:100vh;
+    width:100%;
+    background-color: #151824;
+}
