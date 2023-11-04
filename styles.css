@@ -102,7 +102,6 @@ body{
 
 .intro:nth-child(2){
     margin-top: 40px;
-    background-color: #1d2131;
     width: 339px;
     padding:10px 30px;
 }
@@ -124,7 +123,7 @@ body{
 .container2{
     height:auto;
     width:100%;
-    background-color: #191F36;
+    background-color: #151824;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -154,7 +153,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #444e74;
+    background-color: #1d2131;
     border-radius: 10px;
     flex-direction: column;
 }
@@ -181,7 +180,7 @@ body{
     justify-content: center;
     margin-top: -20px;
     color: white;
-    background-color: #444e74;
+    background-color: #1d2131;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     padding: 10px 10px;
@@ -210,7 +209,7 @@ body{
     flex-direction: column;
     height:100vh;
     width:100%;
-    background-color: #191F36;
+    background-color: #151824;
     position: relative;
 }
 
@@ -254,7 +253,7 @@ body{
     align-items: center;
     flex-direction: column;
     border-radius: 100px;
-    background-color:#444e74;
+    background-color:#1d2131;
 }
 
 .skill img{
