@@ -276,12 +276,13 @@ body{
     height: 100%;
     width: 50%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .skill-description-container{
     height:auto;
     width: 50%;
+    margin-left: 100px;
 }
 
 .dropdown-toggle {
