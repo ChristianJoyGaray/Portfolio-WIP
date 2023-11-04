@@ -108,7 +108,7 @@ body{
 .container1 img{
     display: flex;
     height:70%;
-    width:35%;
+    width:auto;
     /* align-self: end;  MAKE THE IMG BE PLACED AT THE BOTTOM AND NOT MOVE WHEN ZOOMED OUT */ /*WITH container1 with display:grid;, grid-template-columns:1fr 1fr*/
     bottom: 0;
     position: absolute;
