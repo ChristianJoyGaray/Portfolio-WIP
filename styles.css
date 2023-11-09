@@ -416,7 +416,7 @@ body::-webkit-scrollbar {  /* Hide scrollbar for Chrome, Safari and Opera */
 }
 
 
-/*START OF CONTAINER3////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*START OF CONTAINER4////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 
 .container4{
@@ -522,10 +522,6 @@ footer{
     margin-left: 10px;
     position: absolute;
     right: 0;
-}
-
-.social-icons a:nth-child(1){
-    margin-left: 10px;
 }
 
 .social-icons a{
