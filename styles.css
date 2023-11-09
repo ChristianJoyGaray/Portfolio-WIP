@@ -155,6 +155,45 @@ body::-webkit-scrollbar {  /* Hide scrollbar for Chrome, Safari and Opera */
     overflow: hidden;
 }
 
+.intro-title{
+    color: white;
+    margin-bottom: 0px;
+    font-family: 'Montserrat',sans-serif;
+    margin-top: 85px;
+    margin-bottom: 50px;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 0.5s, transform 0.5s;
+    text-align: center;
+}
+
+.intro-container{
+    display: flex;
+    flex-direction: row;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.description-container{
+    width: 500px;
+    padding: 0 30px;
+}
+
+.description-container h1,h2,p{
+    color: white;
+    font-family: 'Montserrat',sans-serif;
+    margin: 0;
+}
+
+.description-container h1,h2{
+    font-size: 3rem;
+}
+
+.description-container p{
+    line-height: 25px;
+    font-size: 1rem;
+}
 
 /*START OF CONTAINER2////////////////////////////////////////////////////////////////////////////////////////////////*/
 
@@ -420,6 +459,7 @@ body::-webkit-scrollbar {  /* Hide scrollbar for Chrome, Safari and Opera */
     height: 50px;
     width: 400px;
     padding-left: 10px;
+    border: 0;
 }
 
 .contact-message textarea{
@@ -429,13 +469,25 @@ body::-webkit-scrollbar {  /* Hide scrollbar for Chrome, Safari and Opera */
     width: 400px;
     min-width: 400px;
     max-width: 400px;
-    padding-left: 20px;
     background-color: #1d2131;
     border-radius: 10px;
     font-family: 'Montserrat',sans-serif;
     font-size: 1rem;
     padding-top: 12px;
-    padding-left: 20px;
+    padding-left: 10px;
+    border: 0;
+}
+
+.contact-message input:valid{
+    color: white;
+}
+
+.contact-message input:invalid{
+    color: red;
+}
+
+.contact-message textarea:valid{
+    color: white;
 }
 
 .contact-message button{
@@ -445,10 +497,11 @@ body::-webkit-scrollbar {  /* Hide scrollbar for Chrome, Safari and Opera */
     font-family: 'Montserrat',sans-serif;
     font-size: 0.8rem;
     padding: 10px;
+    border: 0;
 }
 
 .contact-message button:hover{
-    background-color: #121729;
+    background-color: #181e33;
     cursor: pointer;
 }
 
