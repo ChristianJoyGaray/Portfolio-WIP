@@ -1,6 +1,6 @@
 *{
     box-sizing: border-box;  
-    border: 1px solid red;
+    
 }
 
 html{
@@ -102,6 +102,11 @@ body::-webkit-scrollbar {  /* Hide scrollbar for Chrome, Safari and Opera */
     opacity: 0;
     transform: translateY(100px);
     transition: opacity 0.5s, transform 0.5s;
+}
+
+.spans{
+    font-size: 3.4rem; 
+    font-weight: bolder;
 }
 
 .intro:nth-child(1){
