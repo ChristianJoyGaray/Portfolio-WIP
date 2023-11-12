@@ -549,121 +549,124 @@ footer{
 }
 
 
+/*START OF RESPONSIVE DEVELOPMENT////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
 @media only screen and (max-width: 768px) {
-    .navbar img {
-        height: auto; /* Adjust for responsiveness */
-        width: 80px; /* Adjust for responsiveness */
-    }
+.navbar img {
+    height: auto; /* Adjust for responsiveness */
+    width: 80px; /* Adjust for responsiveness */
+}
 
-    .navbutton {
-        width: auto; /* Adjust for responsiveness */
-    }
+.navbutton {
+    width: auto; /* Adjust for responsiveness */
+}
 
-    .container1 {
-        height: 100vh; /* Adjust for responsiveness */
-        flex-direction: column; /* Stack the items vertically for smaller screens */
-    }
+.container1 {
+    height: 100vh; /* Adjust for responsiveness */
+    flex-direction: column; /* Stack the items vertically for smaller screens */
+}
 
-    .avatar-image{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
+.avatar-image{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 
-    .container1 img{
-        display: flex;
-        height:50%;
-        width:auto;
-        /* align-self: end;  MAKE THE IMG BE PLACED AT THE BOTTOM OF THE CONTAINER AND NOT MOVE WHEN ZOOMED OUT */ /*WITH container1 with display:grid;, grid-template-columns:1fr 1fr*/
-        bottom: 0;
-    }
+.container1 img{
+    display: flex;
+    height:50%;
+    width:auto;
+    /* align-self: end;  MAKE THE IMG BE PLACED AT THE BOTTOM OF THE CONTAINER AND NOT MOVE WHEN ZOOMED OUT */ /*WITH container1 with display:grid;, grid-template-columns:1fr 1fr*/
+    bottom: 0;
+}
 
-    .introduction{
-        height: 50%;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+.introduction{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    .intro {
-        margin: 0 0 0 0;
-        font-size: 1rem; /* Adjust for responsiveness */
-        width: 400px; /* Adjust for responsiveness */
-        line-height: 1.7; /* Adjust for responsiveness */
-    }
+.intro {
+    margin: 0 0 0 0;
+    font-size: 1rem; /* Adjust for responsiveness */
+    width: 400px; /* Adjust for responsiveness */
+    line-height: 1.7; /* Adjust for responsiveness */
+}
 
-    .spans{
-        font-size: 2.3rem; 
-        font-weight: bolder;
-    }
+.spans{
+    font-size: 2.3rem; 
+    font-weight: bolder;
+}
 
-    .intro:nth-child(1){
-        margin-top: 18%;
-        width: auto;
-        height: auto;
-    }
-        
-    .intro:nth-child(2){
-        margin-top: 5%;
-        width: auto;
-        height:10%;
-        display: flex;
-        align-items: center;
-    }
-
-    .fa-hand {
-        font-size: 2rem; /* Adjust for responsiveness */
-        margin-right: 15px; /* Adjust for responsiveness */
-    }
-
-    .introduction-description {
-        height: auto; /* Adjust for responsiveness */
-    }
-
+.intro:nth-child(1){
+    margin-top: 18%;
+    width: auto;
+    height: auto;
+}
     
-    .intro-title {
-        margin-top: 2.5rem; /* Adjust for responsiveness */
-    }
+.intro:nth-child(2){
+    margin-top: 5%;
+    width: auto;
+    height:10%;
+    display: flex;
+    align-items: center;
+}
 
-    .description-container {
-        width: 50%; /* Adjust for responsiveness */
-        padding: 0 3.4rem;
-    }
+.fa-hand {
+    font-size: 2rem; /* Adjust for responsiveness */
+    margin-right: 15px; /* Adjust for responsiveness */
+}
 
-    .description-container h1,h2{
-        font-size: 2rem;
-    }
+.introduction-description {
+    height: auto; /* Adjust for responsiveness */
+}
 
-    .description-container p{
-        font-size: 0.9rem;
-    }
 
-    .container2 {
-        height: auto; /* Adjust for responsiveness */
-        width: 100%;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        overflow: hidden;
-    }
+.intro-title {
+    margin-top: 2.5rem; /* Adjust for responsiveness */
+}
 
-    .project-title {
-        margin-bottom: 0;
-        margin-top: 2.5rem; /* Adjust for responsiveness */
-        margin-bottom: 1.5rem;
-      
-    }
+.description-container {
+    width: 50%; /* Adjust for responsiveness */
+    padding: 0 3.4rem;
+}
 
-    .project-container {
-        height: auto;
-        width: 90%; /* Adjust for responsiveness */
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px; /* Adjust for responsiveness */
-       
-    }
+.description-container h1,h2{
+    font-size: 2rem;
+}
+
+.description-container p{
+    font-size: 0.9rem;
+}
+
+.container2 {
+    height: auto; /* Adjust for responsiveness */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.project-title {
+    margin-bottom: 0;
+    margin-top: 2.5rem; /* Adjust for responsiveness */
+    margin-bottom: 1.5rem;
+    
+}
+
+.project-container {
+    height: auto;
+    width: 90%; /* Adjust for responsiveness */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Adjust for responsiveness */
+    
+}
 
 .project1,
 .project2,
@@ -766,6 +769,5 @@ footer{
     min-height: 4rem;
     font-size: 0.7rem;
 }
-
 
 }
