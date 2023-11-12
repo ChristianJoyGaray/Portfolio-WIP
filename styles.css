@@ -151,8 +151,8 @@ body::-webkit-scrollbar {  /* Hide scrollbar for Chrome, Safari and Opera */
         transform-origin: bottom;
     }
 
-    75% {
-        transform: rotate(-20deg);
+    55% {
+        transform: rotate(-15deg);
         transform-origin: bottom;
     }
 }
