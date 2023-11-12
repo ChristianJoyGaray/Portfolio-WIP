@@ -538,7 +538,6 @@ footer{
 
 .social-icons{
     font-size: 1.5rem;
-    margin-left: 0.625rem;
     position: absolute;
     right: 0;
 }
@@ -768,6 +767,14 @@ footer{
     width: 90%; /* Adjust for responsiveness */
     min-height: 4rem;
     font-size: 0.7rem;
+}
+
+.social-icons{
+    margin-bottom: 100px;
+}
+
+footer{
+    height: 10%;
 }
 
 }
