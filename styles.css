@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;  
+    border: 1px solid red;
 }
 
 html{
@@ -202,7 +203,7 @@ body::-webkit-scrollbar {  /* Hide scrollbar for Chrome, Safari and Opera */
 }
 
 .description-container h1,h2{
-    font-size: 3rem;
+    font-size: 2.9rem;
 }
 
 .description-container p{
@@ -288,6 +289,7 @@ body::-webkit-scrollbar {  /* Hide scrollbar for Chrome, Safari and Opera */
     border-top-left-radius: 10px;
     padding: 0.625rem 0.625rem;    
     font-family: 'Montserrat',sans-serif;
+    font-weight: 600;
 }
 
 .project-description{
@@ -452,6 +454,7 @@ body::-webkit-scrollbar {  /* Hide scrollbar for Chrome, Safari and Opera */
     margin-bottom: 3.1rem;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     opacity: 0;
     transform: translateY(100px);
     transition: opacity 0.5s, transform 0.5s;
@@ -570,47 +573,61 @@ footer{
     .container1 img{
         display: flex;
         height:50%;
-        width:40%;
+        width:auto;
         /* align-self: end;  MAKE THE IMG BE PLACED AT THE BOTTOM OF THE CONTAINER AND NOT MOVE WHEN ZOOMED OUT */ /*WITH container1 with display:grid;, grid-template-columns:1fr 1fr*/
         bottom: 0;
-        position: absolute;
-        z-index: 1;
-        justify-content: center;
+
     }
 
     .introduction{
         height: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .intro {
-        margin-left: -150px;
-        color: white;
+        margin: 0 0 0 0;
         font-size: 1rem; /* Adjust for responsiveness */
-        font-family: 'Montserrat', sans-serif;
         height: 40%;
         width: 400px; /* Adjust for responsiveness */
         line-height: 1.7; /* Adjust for responsiveness */
-        font-weight: 400;
-        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-        border-radius: 15px;
-        background-color: #1d2131;
-        opacity: 0;
-        transform: translateY(100px);
-        transition: opacity 0.5s, transform 0.5s;
-        display: block;
+        
     }
+
+/*     
+.intro{
+    margin: 0 0 0 20%;
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Montserrat',sans-serif;
+    width: 80%;
+    max-width: 495px;
+    line-height: 4rem;
+    font-weight:400;
+    box-shadow: 0px 0px 5px rgba(0,0,0,.1);
+    border-radius: 30px;
+    background-color: #1d2131;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 0.5s, transform 0.5s;
+} */
 
     .spans{
         font-size: 2.3rem; 
         font-weight: bolder;
     }
+
+    .intro:nth-child(1){
+        margin-top: 18%;
+        width: auto;
+    }
         
     .intro:nth-child(2){
-        margin-top: 40px;
-        width: 330px;
+        margin-top: 2%;
+        width: auto;
         height:10%;
-        padding:30px 30px;
-        line-height: 20px;
         display: flex;
         align-items: center;
     }
@@ -618,37 +635,28 @@ footer{
     .fa-hand {
         font-size: 2rem; /* Adjust for responsiveness */
         margin-right: 15px; /* Adjust for responsiveness */
-        animation: wave 2s infinite;
-        display: inline-block;
     }
 
     .introduction-description {
         height: auto; /* Adjust for responsiveness */
-        width: 100%;
-        background-color: #151824;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-        overflow: hidden;
     }
 
     
     .intro-title {
-        color: white;
-        margin-bottom: 0;
-        font-family: 'Montserrat', sans-serif;
-        margin-top: 20px; /* Adjust for responsiveness */
-        margin-bottom: 30px;
-        opacity: 0;
-        transform: translateY(100px);
-        transition: opacity 0.5s, transform 0.5s;
-        text-align: center;
+        margin-top: 2.5rem; /* Adjust for responsiveness */
     }
 
     .description-container {
-        width: 90%; /* Adjust for responsiveness */
+        width: 50%; /* Adjust for responsiveness */
         padding: 0 20px;
+    }
+
+    .description-container h1,h2{
+        font-size: 2rem;
+    }
+
+    .description-container p{
+        font-size: 0.9rem;
     }
 
     .container2 {
@@ -665,7 +673,7 @@ footer{
         color: white;
         margin-bottom: 0;
         font-family: 'Montserrat', sans-serif;
-        margin-top: 20px; /* Adjust for responsiveness */
+        margin-top: 2.5rem; /* Adjust for responsiveness */
         margin-bottom: 30px;
         opacity: 0;
         transform: translateY(100px);
@@ -685,17 +693,35 @@ footer{
         transition: opacity 0.5s, transform 0.5s;
     }
 
-    .project1,
+.project1,
 .project2,
 .project3 {
-    height: auto;
-    width: 90%; /* Adjust for responsiveness */
+    height: 20rem;
+    width: 40%; /* Adjust for responsiveness */
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #1d2131;
     border-radius: 10px;
     flex-direction: column;
+}
+
+.project-image{
+    height: 10rem;
+    width: 10rem;
+    margin-top: -1rem;
+}
+
+.project-name{
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+.project-description{
+    font-size: 0.8rem;
+    margin-top: 0.8rem;
+    margin-bottom: 0.3rem;
+    width: 80%;
 }
 
 .container3 {
