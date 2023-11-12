@@ -1,6 +1,6 @@
 *{
     box-sizing: border-box;  
-    border: 1px solid red;
+    
 }
 
 html{
@@ -478,16 +478,16 @@ body::-webkit-scrollbar {  /* Hide scrollbar for Chrome, Safari and Opera */
     font-family: 'Montserrat',sans-serif;
     font-size: 1rem;
     height: 3.1rem;
-    width: 25rem;
+    width: 90%;
     padding-left: 0.625rem;
     border: 1px solid #505566;
 }
 
 .contact-message textarea{
-    max-height: 12rem;
-    min-height: 12rem;
-    min-width: 25rem;
-    max-width: 25rem;
+    max-height: 100%;
+    min-height: 10rem;
+    min-width: 90%;
+    max-width: 90%;
     background-color: #1d2131;
     border-radius: 10px;
     font-family: 'Montserrat',sans-serif;
@@ -521,7 +521,7 @@ body::-webkit-scrollbar {  /* Hide scrollbar for Chrome, Safari and Opera */
 
 .contact-message button:hover{
     background-color: #181e33;
-    cursor: pointer;
+    cursor:not-allowed;
 }
 
 .contact-message button:active{
@@ -737,7 +737,7 @@ footer{
     max-height: 200px;
 }
 .container4 {
-    height: auto; /* Adjust for responsiveness */
+    height: 40vh; /* Adjust for responsiveness */
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -745,15 +745,27 @@ footer{
 
 .contact-title {
     margin-bottom: 0;
-    margin-top: 20px; /* Adjust for responsiveness */
-    margin-bottom: 30px;
+    margin-top: 2.5rem; /* Adjust for responsiveness */
+    margin-bottom: 1.5rem;
     display: flex;
     justify-content: center;
 }
 
-.contact-message input,
-.contact-message textarea {
-    width: 90%; /* Adjust for responsiveness */
+.contact-message{
+    width: 20rem;
 }
-    /* ... (other media query adjustments) */
+
+.contact-message input{
+    width: 90%; /* Adjust for responsiveness */
+    height:2rem;
+    font-size: 0.7rem;
+}
+
+.contact-message textarea{
+    width: 90%; /* Adjust for responsiveness */
+    min-height: 4rem;
+    font-size: 0.7rem;
+}
+
+
 }
