@@ -133,11 +133,11 @@ body::-webkit-scrollbar {  /* Hide scrollbar for Chrome, Safari and Opera */
     z-index: 1;
 }
 
-.fa-hand{
+.fa-hand {
     font-size: 3rem;
-    margin-right: 30px; /*250px*/
-    animation: wave 2s infinite;
+    margin-right: 30px;
     display: inline-block;
+    animation: wave 2s infinite;
 }
 
 @keyframes wave {
@@ -147,15 +147,21 @@ body::-webkit-scrollbar {  /* Hide scrollbar for Chrome, Safari and Opera */
     }
 
     25% {
+        transform: rotate(-20deg);
+        transform-origin: bottom;
+    }
+
+    50% {
         transform: rotate(20deg);
         transform-origin: bottom;
     }
 
-    55% {
-        transform: rotate(-15deg);
+    75% {
+        transform: rotate(-20deg);
         transform-origin: bottom;
     }
 }
+
 /*START OF CONTAINER1 INTRODUCTION///////////////////////////////////////////////////////////////////////////////////*/
 
 
