@@ -674,7 +674,7 @@ footer{
         margin-bottom: 0;
         font-family: 'Montserrat', sans-serif;
         margin-top: 2.5rem; /* Adjust for responsiveness */
-        margin-bottom: 30px;
+        margin-bottom: 1.5rem;
         opacity: 0;
         transform: translateY(100px);
         transition: opacity 0.5s, transform 0.5s;
@@ -728,19 +728,20 @@ footer{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
     height: auto; /* Adjust for responsiveness */
     width: 100%;
     background-color: #151824;
     position: relative;
     overflow: hidden;
+
 }
 
 .skill-title {
     color: white;
-    margin-bottom: 0;
     font-family: 'Montserrat', sans-serif;
-    margin-top: 20px; /* Adjust for responsiveness */
-    margin-bottom: 30px;
+    margin-top: 2.5rem; /* Adjust for responsiveness */
+    margin-bottom: 1.5rem;
     display: flex;
     justify-content: center;
     opacity: 0;
@@ -757,6 +758,23 @@ footer{
     transition: opacity 0.5s, transform 0.5s;
 }
 
+.skill{
+    height: 5rem;
+    width: 5rem;
+    margin: 0 20px;
+}
+
+.skill-icon-container p{
+    font-size: 0.7rem;
+}
+
+.skill-description{
+    height: auto;
+}
+
+.dropdown-toggle:checked + .dropdown-label + .dropdown-content{
+    max-height: 200px;
+}
 .container4 {
     height: auto; /* Adjust for responsiveness */
     width: 100%;
