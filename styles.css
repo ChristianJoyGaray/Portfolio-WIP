@@ -215,6 +215,8 @@ body::-webkit-scrollbar {  /* Hide scrollbar for Chrome, Safari and Opera */
 .description-container p{
     line-height: 1.5rem;    
     font-size: 1rem;
+    text-align:justify;
+    word-break: break-all; /*USED TO REMOVE ANNOYING SPACES WITH text-align:justify;*/
 }
 
 /*START OF CONTAINER2////////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -307,6 +309,7 @@ body::-webkit-scrollbar {  /* Hide scrollbar for Chrome, Safari and Opera */
     display: flex;
     justify-content: center;
     text-align:justify;
+    word-break: break-all;
     font-family: 'Montserrat',sans-serif;
 }
 
@@ -397,6 +400,11 @@ body::-webkit-scrollbar {  /* Hide scrollbar for Chrome, Safari and Opera */
     height:auto;
     width: 50%;
     margin-left: 100px;
+}
+
+.spans2{
+    color:#93acb3; 
+    font-size: 0.7rem;
 }
 
 .dropdown-toggle {
@@ -558,6 +566,7 @@ footer{
 
 
 @media only screen and (max-width: 768px) {
+    
 .navbar img {
     height: auto; /* Adjust for responsiveness */
     width: 80px; /* Adjust for responsiveness */
@@ -728,6 +737,11 @@ footer{
     display: flex;
 }
 
+.skill-description-container{
+    margin-left: 75px;
+    width: 60%;
+}
+
 .skill{
     height: 5rem;
     width: 5rem;
@@ -786,3 +800,193 @@ footer{
 }
 
 }
+
+@media only screen and (max-width: 520px){
+
+.intro-container{
+    width: 98%;
+}
+
+.description-container{
+    padding: 0rem;
+
+}
+
+.description-container h1,h2{
+    font-size: 1.5rem;
+}
+}
+
+@media only screen and (max-width: 480px) {
+
+.navbar img {
+    height: auto; /* Adjust for responsiveness */
+    width: 65px; /* Adjust for responsiveness */
+}
+
+.intro-title{
+    margin-bottom: 0.5rem;
+}
+
+.intro-container{
+    width: 90%;
+}
+
+.description-container {
+    width: 50%; /* Adjust for responsiveness */
+    padding: 0 1rem;
+}
+
+.description-container h1,h2{
+    font-size: 1.3rem;
+}
+
+.description-container p{
+    font-size: 0.8rem;
+    line-height: 1rem;
+}
+    
+.project1,
+.project2,
+.project3 {
+    height: 18rem;
+}
+   
+.project-image{
+    height: 8rem;
+    width: 8rem;
+    margin-top: -1rem;
+}
+
+.project-name{
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.project-description{
+    font-size: 0.8rem;
+    margin-top: 0.8rem;
+    margin-bottom: 0.3rem;
+    width: 80%;
+}
+
+.container3 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: auto; /* Adjust for responsiveness */
+    width: 100%;
+}
+
+.spans2{
+    color:#93acb3; 
+    font-size: 0.5rem;
+}
+
+.skill-title {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 2.5rem; /* Adjust for responsiveness */
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.skill{
+    height: 4rem;
+    width: 4rem;
+    margin: 0 10px;
+}
+
+.skill-icon-container p{
+    font-size: 0.6rem;
+}
+
+.skill-description-container{
+    margin-left: 30px;
+    width: 90%;
+}
+
+.dropdown-label, .dropdown-content{
+    font-size: 0.8rem;
+}
+
+.contact-title {
+    width: 90%;
+}
+
+.contact-message{
+    width: 18rem;
+    margin-bottom: 25%;
+}
+
+.contact-message input{
+    width: 90%; /* Adjust for responsiveness */
+    height:2rem;
+    font-size: 0.7rem;
+}
+
+.contact-message textarea{
+    width: 90%; /* Adjust for responsiveness */
+    min-height: 4rem;
+    font-size: 0.7rem;
+}
+
+footer{
+    height: 2.5rem;
+}
+
+}
+
+  
+
+@media only screen and (max-width: 415px){
+        
+.navbar a{
+    margin-right:1rem;
+}
+  
+.navbutton{
+    width: 4rem;
+    font-size: 0.8rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+        
+}
+
+@media only screen and (max-width: 400px){
+
+.project-image{
+    height: 7rem;
+    width: 7rem;
+}
+    
+}
+
+    
+@media only screen and (max-width: 380px){
+
+.project-image{
+    height: 6.5rem;
+    width: 6.5rem;
+}
+
+.description-container h1,h2{
+    font-size: 1.2rem;
+}
+
+.description-container p{
+    font-size: 0.8rem;
+    line-height: 1rem;
+}
+
+.project1,
+.project2,
+.project3{
+    height: 17.5rem;
+}
+    
+}
+   
