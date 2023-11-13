@@ -563,10 +563,54 @@ footer{
 
 
 /*START OF RESPONSIVE DEVELOPMENT////////////////////////////////////////////////////////////////////////////////////////////////*/
+@media only screen and (max-width: 1200px){
+  
+.container1 {
+    height: 100vh; /* Adjust for responsiveness */
+    flex-direction: column; /* Stack the items vertically for smaller screens */
+}
+
+.avatar-image{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container1 img{
+    display: flex;
+    height:50%;
+    width:auto;
+    /* align-self: end;  MAKE THE IMG BE PLACED AT THE BOTTOM OF THE CONTAINER AND NOT MOVE WHEN ZOOMED OUT */ /*WITH container1 with display:grid;, grid-template-columns:1fr 1fr*/
+    bottom: 0;
+}
+
+.introduction{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro {
+    margin: 0 0 0 0;
+    font-size: 1rem; /* Adjust for responsiveness */
+    width: 400px; /* Adjust for responsiveness */
+    line-height: 1.7; /* Adjust for responsiveness */
+}
+.spans{
+    font-size: 2.3rem; 
+    font-weight: bolder;
+}
+
+.introduction-description, .container2, .container3, .container4{
+    height: auto;
+}
+}
 
 
 @media only screen and (max-width: 768px) {
-    
+
 .navbar img {
     height: auto; /* Adjust for responsiveness */
     width: 80px; /* Adjust for responsiveness */
