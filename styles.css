@@ -581,7 +581,7 @@ footer{
 
 .container1 img{
     display: flex;
-    height:50%;
+    height:45%;
     width:auto;
     /* align-self: end;  MAKE THE IMG BE PLACED AT THE BOTTOM OF THE CONTAINER AND NOT MOVE WHEN ZOOMED OUT */ /*WITH container1 with display:grid;, grid-template-columns:1fr 1fr*/
     bottom: 0;
@@ -604,6 +604,14 @@ footer{
 
 .intro:nth-child(1){
     margin-top:20%; 
+    
+    width: auto;
+    height: auto;
+}
+    
+.intro:nth-child(2){
+    width: auto;
+    height:auto;
     padding:1.2rem 1.7rem;
 }
 
@@ -616,6 +624,17 @@ footer{
     height: auto;
 }
 }
+
+@media only screen and (max-width: 1100px){
+    .container1 img{
+        height:40%;
+    }
+    
+    .introduction{
+        height: 50%;
+        width: 100%;
+    }
+    }
 
 
 @media only screen and (max-width: 1025px){
@@ -688,7 +707,8 @@ footer{
 .intro:nth-child(2){
     margin-top: 5%;
     width: auto;
-    height:10%;
+    height:auto;
+    padding:1.2rem 1.7rem;
     display: flex;
     align-items: center;
 }
