@@ -563,6 +563,8 @@ footer{
 
 
 /*START OF RESPONSIVE DEVELOPMENT////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
 @media only screen and (max-width: 1200px){
   
 .container1 {
@@ -572,6 +574,7 @@ footer{
 
 .avatar-image{
     width: 100%;
+    height: 50%;
     display: flex;
     justify-content: center;
 }
@@ -598,6 +601,12 @@ footer{
     width: 400px; /* Adjust for responsiveness */
     line-height: 1.7; /* Adjust for responsiveness */
 }
+
+.intro:nth-child(1){
+    margin-top:20%; 
+    padding:1.2rem 1.7rem;
+}
+
 .spans{
     font-size: 2.3rem; 
     font-weight: bolder;
@@ -608,6 +617,17 @@ footer{
 }
 }
 
+
+@media only screen and (max-width: 1025px){
+.container1 img{
+    height:35%;
+}
+
+.introduction{
+    height: 50%;
+    width: 100%;
+    
+}
 
 @media only screen and (max-width: 768px) {
 
@@ -988,7 +1008,7 @@ footer{
 @media only screen and (max-width: 415px){
         
 .navbar a{
-    margin-right:1rem;
+    margin-right:2rem;
 }
   
 .navbutton{
@@ -996,6 +1016,14 @@ footer{
     font-size: 0.8rem;
     padding-left: 1rem;
     padding-right: 1rem;
+}
+
+.container1 img{
+    display: flex;
+    height:40%;
+    width:auto;
+    /* align-self: end;  MAKE THE IMG BE PLACED AT THE BOTTOM OF THE CONTAINER AND NOT MOVE WHEN ZOOMED OUT */ /*WITH container1 with display:grid;, grid-template-columns:1fr 1fr*/
+    bottom: 0;
 }
         
 }
