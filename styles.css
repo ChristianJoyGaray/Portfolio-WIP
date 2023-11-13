@@ -922,7 +922,7 @@ footer{
 .description-container {
     width: 80%; /* Adjust for responsiveness */
     padding: 0 1rem;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
 }
 
 .description-container h1,h2{
@@ -931,7 +931,7 @@ footer{
 
 .description-container p{
     font-size: 0.8rem;
-    line-height: 1rem;
+    line-height: 1.2rem;
 }
     
 .project1,
