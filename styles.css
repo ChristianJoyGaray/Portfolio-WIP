@@ -629,6 +629,8 @@ footer{
     
 }
 
+}
+
 @media only screen and (max-width: 768px) {
 
 .navbar img {
@@ -873,12 +875,15 @@ footer{
 
 .description-container{
     padding: 0rem;
-
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 .description-container h1,h2{
     font-size: 1.5rem;
 }
+
+
 }
 
 @media only screen and (max-width: 480px) {
@@ -894,11 +899,16 @@ footer{
 
 .intro-container{
     width: 90%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .description-container {
-    width: 50%; /* Adjust for responsiveness */
+    width: 80%; /* Adjust for responsiveness */
     padding: 0 1rem;
+    margin-bottom: 3%;
 }
 
 .description-container h1,h2{
@@ -914,6 +924,7 @@ footer{
 .project2,
 .project3 {
     height: 18rem;
+    width: 15rem;
 }
    
 .project-image{
@@ -923,7 +934,7 @@ footer{
 }
 
 .project-name{
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     font-weight: 600;
 }
 
@@ -1040,6 +1051,11 @@ footer{
     
 @media only screen and (max-width: 380px){
 
+.navbar a{
+    margin-right:1rem;
+}
+    
+
 .project-image{
     height: 6.5rem;
     width: 6.5rem;
@@ -1058,7 +1074,73 @@ footer{
 .project2,
 .project3{
     height: 17.5rem;
+    width: ;
 }
     
 }
-   
+
+@media only screen and (max-width: 360px){
+    .navbar a{
+        margin-right:0.35rem;
+    }
+    .spans{
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+
+    .description-container h1,h2{
+        font-size: 1.1rem;
+    }
+
+}
+
+@media only screen and (max-width: 320px){
+
+.navbar a{
+    margin-right:0.1rem;
+    
+}
+
+.navbar a:nth-of-type(1){
+    margin-left:-2rem;
+    
+}
+
+.navbar ul{
+    padding: 0;
+}
+
+.container1 img{
+    display: flex;
+    height:30%;
+    width:auto;
+    /* align-self: end;  MAKE THE IMG BE PLACED AT THE BOTTOM OF THE CONTAINER AND NOT MOVE WHEN ZOOMED OUT */ /*WITH container1 with display:grid;, grid-template-columns:1fr 1fr*/
+    bottom: 0;
+}
+
+.spans{
+    font-size: 1.5rem;
+}
+
+.skill-description-container{
+    margin-left: 1rem;
+}
+
+.description-container h1,h2{
+    font-size: 1rem;
+}
+
+.project-image{
+    height: 5.5rem;
+    width: 5.5rem;
+}
+
+.project-name{
+    font-size: 0.65rem;
+}
+
+.social-icons{
+    font-size: 1rem;
+}
+
+}
