@@ -1,6 +1,6 @@
 *{
     box-sizing: border-box;  
-    
+
 }
 
 html{
@@ -178,7 +178,6 @@ body::-webkit-scrollbar {  /* Hide scrollbar for Chrome, Safari and Opera */
 
 .intro-title{
     color: white;
-    margin-bottom: 0px;
     font-family: 'Montserrat',sans-serif;
     margin-top: 5rem;    
     margin-bottom: 3rem;
@@ -283,6 +282,10 @@ body::-webkit-scrollbar {  /* Hide scrollbar for Chrome, Safari and Opera */
     width: 100%;
     object-fit: cover;
     border-radius: 10px;
+}
+
+.project-image img:hover{
+    cursor: pointer;
 }
 
 .project-name{
